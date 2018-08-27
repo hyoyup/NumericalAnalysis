@@ -1,4 +1,34 @@
-how to run:
+how to run .sage file:
 	- visit http://sagecell.sagemath.org/
 	- copy the entire code into the box on the website above
 	- press evaluate
+====================================================================
+"ivp.sage"
+For the three ODE problems, followings are defined as default:
+
+One-Dimensional ODE
+Input: h=0.1, t_0=0, y_0=1, n=50
+	f(t,y) = (5*t^2-y)/(e^(t+y))
+
+	graph points: f(t,y) with respect to t
+
+System ODE
+Input: h=0.1, t_0=0 z_0=[1,2], n=50
+	z = [x, y]
+	f(t,z) = z' = [x', y']
+
+	x' = t - x + y
+	y' = 2t - 2x - y
+
+	graph points: y' with respect to x'
+
+Second Order ODE
+Input: h=0.1, t_0=0, z_0=[1,0], n=50
+	z = [y, v]
+	f(t,z) = z' = [y', v']
+
+	y' = v
+	v' = cos(t) - y - v
+
+	graph points: v' with respect to t
+=====================================================================
