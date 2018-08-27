@@ -5,7 +5,9 @@ Numerical Analysis
 - Jacobi Method, Gauss-Seidel Method
 - JPEG Compression/Decompression (pre-2000)
 
-how to run .sage file:
+===================================================================
+"~.sage"
+how to run:
 	- visit http://sagecell.sagemath.org/
 	- copy the entire code into the box on the website above
 	- press evaluate
