@@ -2,6 +2,7 @@ Numerical Analysis
 - Fixed Point method, Bisection Method
 - Numerical Integration
 	midpoint, trapezoid, Simpsons, MonteCarlo
+- Jacobi Method, Gauss-Seidel Method
 - 
 
 how to run .sage file:
@@ -38,3 +39,20 @@ Input: h=0.1, t_0=0, z_0=[1,0], n=50
 
 	graph points: v' with respect to t
 =====================================================================
+"Jacobi_GaussSeidel.py"
+run:
+	python Jacobi_GaussSeidel.py
+
+how to change input.txt:
+	- first line indicates n: size of the matrix (n x n)
+	- then each line corresponds to the row of augmented matrix Ax = B
+	- values of B is separated by a character ';' in each row
+
+	**see also test.txt
+	(provided input.txt has a system of 10x10 matrix)
+
+how to change epsilon and x_0:
+	- on the bottom of proj3.py:
+		eps = 0.0001 	# epsilon currently set to 10^-4 
+		x_0 = [0]*n	 	# x_0 currently set to 0
+===========================================================================
