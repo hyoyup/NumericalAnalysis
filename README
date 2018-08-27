@@ -82,3 +82,4 @@ choosing input image file:
 miscellaneous:
 	- 8x8 blocks are used
 	- masking matrix M from the handout is used
+**TODO: rgb values need to be wrapped to remove color acnes on the output image
