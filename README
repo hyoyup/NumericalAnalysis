@@ -1,4 +1,8 @@
-#Numerical Analysis
+Numerical Analysis
+- Fixed Point method, Bisection Method
+- Numerical Integration
+	midpoint, trapezoid, Simpsons, MonteCarlo
+- 
 
 how to run .sage file:
 	- visit http://sagecell.sagemath.org/
