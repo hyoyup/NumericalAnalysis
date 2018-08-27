@@ -3,7 +3,7 @@ Numerical Analysis
 - Numerical Integration
 	midpoint, trapezoid, Simpsons, MonteCarlo
 - Jacobi Method, Gauss-Seidel Method
-- 
+- JPEG Compression/Decompression (pre-2000)
 
 how to run .sage file:
 	- visit http://sagecell.sagemath.org/
@@ -56,3 +56,27 @@ how to change epsilon and x_0:
 		eps = 0.0001 	# epsilon currently set to 10^-4 
 		x_0 = [0]*n	 	# x_0 currently set to 0
 ===========================================================================
+"jpegComp.py"
+run:
+	python jpegComp.py
+
+required libraries:
+	- numpy
+	- PIL
+	- math
+
+input jpeg file specification:
+	- .jpg image of size NxN (N%8==0 only)
+	- 3 sample images are provided in the folder:
+		1. 'originalImage.jpg'   # 160x160 pixels
+		2. 'BiggerImage.jpg'     # 320x320 pixels
+		3. 'digipen.jpg'		 # 400x400 pixels
+	- each output image files are included in 'sampleOutput' folder
+
+choosing input image file:
+	- in proj4.py, line 113-115,
+		choose one line and comment out the other lines
+	
+miscellaneous:
+	- 8x8 blocks are used
+	- masking matrix M from the handout is used
